@@ -1,0 +1,9 @@
+.landscape {
+   padding: 120px 0;
+}
+
+.landscape__inner {
+   display: flex;
+   gap: 138px;
+   margin-top: 80px;
+}

@@ -4,11 +4,51 @@
       <meta charset="UTF-8" />
       <link rel="icon" type="image/svg+xml" href="/vite.svg" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="/src/style.css" />
+      <link rel="stylesheet" href="/src/css/common.css" />
+      <link rel="stylesheet" href="/src/css/header.css" />
+      <link rel="stylesheet" href="/src/css/hero.css" />
       <title>Zona</title>
    </head>
    <body>
-      <h1>Hello World</h1>
-      <script type="module" src="/src/main.js"></script>
+      <div class="container header">
+         <img src="/src/assets/images/logo.svg" alt="" />
+         <div class="header__menu">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <img src="/src/assets/images/navbar-dot.svg" alt="" />
+               <li><a href="#">Solutions</a></li>
+               <img src="/src/assets/images/navbar-dot.svg" alt="" />
+               <li><a href="#">About Us</a></li>
+               <img src="/src/assets/images/navbar-dot.svg" alt="" />
+               <li><a href="#">Resources</a></li>
+            </ul>
+         </div>
+         <a href="#" class="btn btn--dark">
+            <img src="/src/assets/images/phone.svg" alt="" />
+            Contact Us
+         </a>
+      </div>
+      <section class="hero--bg--line">
+         <div class="container hero">
+            <h1>Data-driven insights</h1>
+            <div class="hero__inner">
+               <h5 class="hero__inner__main__para">Transforming tomorrow with AI-Powered intelligence to drive innovation</h5>
+               <div class="hero__inner__main">
+                  <p class="p-lg">Empowering businesses through data-driven insights and automation to achieve unparalleled growth. We built to revolutionize industries and improve productivity.</p>
+                  <div class="hero__inner__flex">
+                     <a href="#" class="btn btn--dark">Explore Our Solutions <img src="/src/assets/images/arrow-up-right.svg" alt="" /> </a>
+                     <a href="#" class="btn btn--light">
+                        Book a Demo
+                        <img class="rotating-icon" src="/src/assets/images/animated-box.svg" alt="" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="container landscape">
+         <h2>Rapidly changing tech landscape</h2>
+      </section>
+      <script type="module" src="/src/js/main.js"></script>
    </body>
 </html>

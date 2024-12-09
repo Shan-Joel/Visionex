@@ -1,0 +1,79 @@
+.hero {
+   position: relative;
+   width: 100%;
+   min-height: 300px;
+   padding: 114px 0;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   animation: changeBackground 10s infinite;
+}
+
+/* Keyframes for the animation */
+@keyframes changeBackground {
+   0% {
+      background-image: url('../assets/images/home-bg-1.png');
+   }
+   50% {
+      background-image: url('../assets/images/home-bg-2.png');
+   }
+   100% {
+      background-image: url('../assets/images/home-bg-1.png');
+   }
+}
+
+.hero--bg--line {
+   background-image: url(../assets/images/hero-bottom-line.png);
+   width: 100%;
+   height: 100%;
+   background-position: right 12em;
+   background-repeat: no-repeat;
+}
+
+.hero__inner {
+   margin-top: 149px;
+   display: flex;
+   align-items: flex-end;
+   max-width: 1013px;
+   justify-content: space-between;
+}
+
+.hero__inner .hero__inner__main__para {
+   max-width: 355px;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 30px;
+   letter-spacing: -1px;
+}
+
+.hero__inner__main {
+   max-width: 476px;
+}
+
+.hero__inner__main .btn {
+   display: flex;
+   gap: 10px;
+   padding: 0 30px;
+}
+
+.hero__inner__flex {
+   display: flex;
+   margin-top: 39px;
+   gap: 12px;
+}
+
+.rotating-icon {
+   display: inline-block;
+   animation: rotateIcon 4.5s linear infinite;
+}
+
+/* Keyframes for rotation */
+@keyframes rotateIcon {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}

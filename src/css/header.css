@@ -1,0 +1,40 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 19px 0;
+}
+
+.header ul {
+   display: flex;
+   gap: 24px;
+}
+
+.header ul li {
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: -0.02em;
+   min-height: 32px;
+   border: 1px solid transparent;
+   transition: all 0.3s ease-in-out;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.header ul li:hover {
+   border-color: #0000001a;
+   border-radius: 30px;
+   padding: 0 10px;
+}
+
+.header .btn {
+   display: flex;
+   gap: 10px;
+   height: 48px;
+   font-size: 14px;
+   width: 144px;
+   padding: 0;
+}

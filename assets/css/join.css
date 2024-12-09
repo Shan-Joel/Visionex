@@ -1,0 +1,9 @@
+.join {
+   padding: 102px 0;
+   margin: 60px auto;
+}
+
+.join > h2 {
+   max-width: 860px;
+   text-align: center;
+}

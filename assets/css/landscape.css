@@ -1,9 +1,86 @@
+:root {
+   --zona-purple: #cc41e4;
+   --zona-light-gray: #e6e6e6;
+}
+
 .landscape {
    padding: 120px 0;
 }
 
+.landscape__item {
+   display: flex;
+}
+
 .landscape__inner {
    display: flex;
-   gap: 138px;
+   gap: 100px;
    margin-top: 80px;
+}
+
+.landscape__inner {
+   background-image: url('/assets/images/landscape-right-img.png');
+   background-size: contain;
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+.landscape__item h5 {
+   padding-right: 47px;
+   font-size: 36px;
+   font-weight: 500;
+   line-height: 34px;
+   letter-spacing: -0.02em;
+   padding-bottom: 60px;
+   display: flex;
+   align-items: center;
+   color: var(--zona-light-gray);
+   transition: color 0.3s ease-in-out;
+}
+
+.landscape__item:nth-child(2) h5,
+.landscape__item:nth-child(3) h5 {
+   padding-right: 39px;
+}
+
+.landscape__item__data {
+   padding-left: 47px;
+   border-left: 2px solid var(--zona-light-gray);
+   padding-bottom: 60px;
+   transition: border-color 0.3s ease-in-out;
+}
+
+.landscape__item:nth-child(3) .landscape__item__data {
+   padding-bottom: 30px;
+}
+
+.landscape__item__data h6 {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   letter-spacing: -0.02em;
+   margin: 12px 0;
+}
+
+.landscape__item__data p {
+   color: var(--zona-gray);
+}
+
+.landscape__item:hover .landscape__item__data {
+   cursor: pointer;
+}
+
+.landscape__item.active .landscape__item__data h6 {
+   background: linear-gradient(133.04deg, #de35ff -3.93%, #3a65ff 65.78%, #16f1ff 104.34%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+}
+
+/* Hover effect for the landscape items */
+.landscape__item.active .landscape__item__data {
+   border-left: 2px solid var(--zona-purple);
+}
+
+.landscape__item.active h5 {
+   color: #18191c;
 }

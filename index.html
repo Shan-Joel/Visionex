@@ -2,16 +2,19 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="/assets/css/common.css" />
       <link rel="stylesheet" href="/assets/css/header.css" />
       <link rel="stylesheet" href="/assets/css/hero.css" />
       <link rel="stylesheet" href="/assets/css/landscape.css" />
-      <title>Zona</title>
+      <link rel="stylesheet" href="/assets/css/pricing.css" />
+      <link rel="stylesheet" href="/assets/css/join.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <title>Zona: Transforming tomorrow with AI-Powered intelligence to drive innovation</title>
    </head>
    <body>
-      <div class="container header">
+      <!-- section 1 -->
+      <header class="container header">
          <a href="/"> <img src="/assets/images/logo.svg" alt="" /></a>
          <div class="header__menu">
             <ul>
@@ -28,7 +31,9 @@
             <img src="/assets/images/phone.svg" alt="" />
             Contact Us
          </a>
-      </div>
+      </header>
+
+      <!-- section 2 -->
       <section class="hero--bg--line">
          <div class="container hero">
             <h1>Data-driven insights</h1>
@@ -47,13 +52,90 @@
             </div>
          </div>
       </section>
+
+      <!-- section 3 -->
       <section class="container landscape">
          <h2 class="mx-700">Rapidly changing tech landscape</h2>
          <div class="landscape__inner">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sed tenetur at quo ipsam saepe quae adipisci error, velit nulla.</p>
+            <div>
+               <div class="landscape__item">
+                  <h5>01</h5>
+                  <div class="animated-line"></div>
+                  <div class="landscape__item__data">
+                     <img src="/assets/images/landscape-data-icon-1.svg" alt="" />
+                     <h6>Data Collection & Analysis</h6>
+                     <p class="p-sm">Our AI systems gather and process data from various sources, ensuring a comprehensive understanding.</p>
+                  </div>
+               </div>
+               <div class="landscape__item">
+                  <h5>02</h5>
+                  <div class="animated-line"></div>
+                  <div class="landscape__item__data">
+                     <img src="/assets/images/sailboat.svg" alt="" />
+                     <h6>Deployment and Monitoring</h6>
+                     <p class="p-sm">The solution is deployed to seamlessly integrate into your existing systems, with ongoing monitoring to optimize performance.</p>
+                  </div>
+               </div>
+               <div class="landscape__item">
+                  <h5>03</h5>
+                  <div class="animated-line"></div>
+                  <div class="landscape__item__data">
+                     <img src="/assets/images/file-folder.svg" alt="" />
+                     <h6>Insights and Reporting</h6>
+                     <p class="p-sm">Receive in-depth analytics and reports to track performance and gain visibility into all AI-driven processes.</p>
+                  </div>
+               </div>
+            </div>
             <img src="/assets/images/landscape-right-img.png" alt="" />
          </div>
       </section>
-      <script type="module" src="/src/js/main.js"></script>
+
+      <!-- section 4 -->
+      <section class="container pricing">
+         <h2 class="txt--center">Plans & Pricing</h2>
+         <p class="p-md txt--center">Simple, transparent pricing. No setup fees or contracts. Try without a credit card, cancel anytime.</p>
+         <div class="pricing__boxes">
+            <div class="pricing__box">
+               <div class="pricing__box__items__top">
+                  <h4>Free</h4>
+                  <h3>$0 <span>/month</span></h3>
+               </div>
+               <div class="pricing__box__items">
+                  <p><img src="/assets/images/check-icon.svg" alt="" />50 Assets</p>
+                  <p><img src="/assets/images/check-icon.svg" alt="" />Unlimited users</p>
+                  <p><img src="/assets/images/check-icon.svg" alt="" />Email Support</p>
+               </div>
+               <div class="pricing__box__items__bottom">
+                  <a class="btn btn--dark" href="#">Get Started Now</a>
+               </div>
+            </div>
+            <div class="pricing__box premium">
+               <div class="pricing__box__items__top">
+                  <h4 class="txt--white">Premium</h4>
+                  <h3 class="txt--white">$20 <span>/month</span></h3>
+               </div>
+               <div class="pricing--bg--white">
+                  <div class="pricing__box__items">
+                     <p><img src="/assets/images/check-icon.svg" alt="" />50 Assets</p>
+                     <p><img src="/assets/images/check-icon.svg" alt="" />Unlimited users</p>
+                     <p><img src="/assets/images/check-icon.svg" alt="" />Email Support</p>
+                     <p><img src="/assets/images/check-icon.svg" alt="" />Chat Support</p>
+                     <p><img src="/assets/images/check-icon.svg" alt="" />API & Integrations</p>
+                  </div>
+                  <div class="pricing__box__items__bottom">
+                     <a class="btn btn--dark" href="#">Start 14-day Trial</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- section 5 -->
+      <section class="container join">
+         <h2 class="txt--center">Ready to start your AI journey with us?</h2>
+         <p class="p-md txt--center"></p>
+      </section>
+
+      <script type="module" src="/assets/js/main.js"></script>
    </body>
 </html>

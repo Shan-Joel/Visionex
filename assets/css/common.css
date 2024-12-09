@@ -3,6 +3,7 @@
 :root {
    --zona-white: #fff;
    --zona-black: #000;
+   --zona-gray: #767a85;
 }
 
 * {
@@ -51,6 +52,7 @@ img,
 video {
    max-width: 100%;
    height: auto;
+   display: block;
 }
 
 *,
@@ -142,4 +144,12 @@ h3 {
 
 .mx-700 {
    max-width: 700px;
+}
+
+.txt--center {
+   text-align: center;
+}
+
+.txt--white {
+   color: var(--zona-white);
 }

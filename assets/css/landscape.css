@@ -88,5 +88,10 @@
 @media screen and (max-width: 980px) {
    .landscape__inner {
       flex-direction: column;
+      gap: 70px;
+   }
+
+   .landscape {
+      padding: 60px 0;
    }
 }

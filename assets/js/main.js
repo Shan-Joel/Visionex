@@ -16,3 +16,18 @@ $(document).ready(function () {
       }
    );
 });
+
+$(document).ready(function () {
+   $('.hamburger-menu').on('click', function () {
+      $(this).toggleClass('active');
+      $('.header__menu').toggleClass('active');
+   });
+
+   // Close menu when clicking outside
+   $(document).on('click', function (event) {
+      if (!$(event.target).closest('.header__menu, .hamburger-menu').length) {
+         $('.hamburger-menu').removeClass('active');
+         $('.header__menu').removeClass('active');
+      }
+   });
+});

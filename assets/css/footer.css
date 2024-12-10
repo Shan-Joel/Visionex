@@ -133,3 +133,46 @@
    background-position: left 40px;
    background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 980px) {
+   .custom-input {
+      width: 100% !important;
+   }
+
+   .custom-input label {
+      font-size: 48px;
+      line-height: 60px;
+      top: -28px;
+   }
+
+   .submit-icon img {
+      width: 60px;
+      height: 60px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .footer__menu ul {
+      flex-direction: column !important;
+      gap: 12px;
+   }
+
+   .footer__menu ul img {
+      width: 6px;
+      height: 6px;
+      margin: auto;
+   }
+
+   .footer__txt {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .custom-input label {
+      font-size: 32px;
+      line-height: 42px;
+   }
+}

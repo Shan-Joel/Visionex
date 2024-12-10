@@ -10,7 +10,6 @@
    animation: changeBackground 10s infinite;
 }
 
-/* Keyframes for the animation */
 @keyframes changeBackground {
    0% {
       background-image: url('/assets/images/home-bg-1.png');

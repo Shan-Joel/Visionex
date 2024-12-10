@@ -16,13 +16,6 @@
    gap: 100px;
    margin-top: 80px;
 }
-/* 
-.landscape__inner {
-   background-image: url('/assets/images/landscape-right-img.png');
-   background-size: contain;
-   background-position: right;
-   background-repeat: no-repeat;
-} */
 
 .landscape__item h5 {
    padding-right: 47px;
@@ -76,7 +69,6 @@
    color: transparent;
 }
 
-/* Hover effect for the landscape items */
 .landscape__item.active .landscape__item__data {
    border-left: 2px solid var(--zona-purple);
 }

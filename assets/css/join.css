@@ -1,9 +1,38 @@
 .join {
    padding: 102px 0;
    margin: 60px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #f6f6f9;
+   border-radius: 30px;
+}
+
+.join {
+   background-image: url('/assets/images/ready-to-start-bg-img.png');
+   background-position: left bottom;
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 .join > h2 {
    max-width: 860px;
    text-align: center;
+}
+
+.join > p {
+   margin: 24px 0;
+   color: #999da6;
+   max-width: 430px;
+}
+
+.join__flex {
+   display: flex;
+   gap: 10px;
+}
+
+.join__flex .btn {
+   padding: 0 30px;
+   gap: 10px;
 }

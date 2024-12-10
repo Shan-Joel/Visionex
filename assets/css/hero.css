@@ -77,3 +77,11 @@
       transform: rotate(360deg);
    }
 }
+
+@media screen and (max-width: 980px) {
+   .hero__inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+   }
+}
